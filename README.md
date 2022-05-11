@@ -3,7 +3,7 @@ Al registrarse o iniciar sesión, se desbloquea en la página la seccion "Admin"
 Tambien se habilita la opción del Logout, para cuando el usuario quiere salir de una cuenta y crearse o entrar a otra pueda hacerlo, esto se puede verificar, ya que al iniciar sesión con cualquier cuenta, en la sección "Admin" indica en un simple párrafo con que cuenta se inició sesión
 
 El proyecto fue publicado en Vercel:
-https://proyecto-firebase-1-b0b7f.web.app/
+https://registro-de-usuario.vercel.app/
 
 
 Al igual que se utilizó el hosting de Firebase:
