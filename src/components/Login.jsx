@@ -75,6 +75,10 @@ const Login = () => {
                 email: res.user.email,
                 uid: res.user.uid
             })
+            await db.collection(res.user.uid).add({
+                name: 'tarea de ejemplo',
+                fecha: Date.now()
+            })
             setEmail('')
             setPass('')
             setError(null)
@@ -155,6 +159,16 @@ const Login = () => {
                             esRegistro ? '¿ya tienes una cuenta?' : '¿no tienes cuenta?'
                         }
                     </button>
+                    {
+                        !esRegistro ? (
+                            <button 
+                                className="btn btn-danger btn-lg btn-sm mt-3 float-center" 
+                                type='button'
+                                onClick={() => params('/reset')}
+                                >                        
+                                    Recuperar contraseña                        
+                            </button>) : null
+                    }
                 </form>
             </div>
         </div>

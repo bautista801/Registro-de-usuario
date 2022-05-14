@@ -9,6 +9,7 @@ import Admin from "./components/Admin";
 import Inicio from "./components/Inicio";
 import Login from "./components/Login";
 import Navbar from "./components/Navbar";
+import Reset from "./components/Reset";
 import {auth} from './firebase'
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
           <Route path='/' element={<Inicio />} />
           <Route path='/Login' element={<Login />}/>
           <Route path='/Admin' element={<Admin />}/>
+          <Route path='/Reset' element={<Reset />} />
         </Routes>
       </div>
 
